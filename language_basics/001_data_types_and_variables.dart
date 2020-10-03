@@ -1,6 +1,8 @@
 /*
     Dart core lib -https://api.dart.dev/stable/2.9.3/dart-core/dart-core-library.html
     Dart tour - https://dart.dev/guides/language/language-tour
+
+    Every Dart program starts with a function called main()
     
     Built-in types:
 
@@ -10,6 +12,10 @@
     Lists	    - List is an ordered group of objects
     Maps	    - Map represents a set of values as key-value pairs
     Set       - A collection of objects in which each object can occur only once.
+
+    Variables: var, and dynamic
+
+    Immutables: const and final 
 
 */
 void main() {
@@ -77,16 +83,20 @@ void main() {
   print("User: $user");
 
   // final and const
-  // If you never intend to change a variable, use final or const 
+  // If you never intend to change a variable, use final or const
   // final vs const (https://stackoverflow.com/questions/50431055/what-is-the-difference-between-the-const-and-final-keywords-in-dart)
 
   // Const Value must be known at compile-time,
   //Can't be changed after initialized.
-  const birthdate = "2008/12/26";
+  const birthdate = "14/09";
   print(birthdate);
 
   //Final Value must be known at run-time,
   //Can't be changed after initialized.
   final birthday = getBirthDateFromDB();
+  print(birthday);
+}
 
+getBirthDateFromDB() {
+  return '14/09';
 }

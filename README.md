@@ -4,5 +4,7 @@
 
 ### Language basics
 
-        - Data types
-        - Variable types
+        - 001 Data types and variables
+        - 002 Strings
+        - 003 Operators
+        - 004
