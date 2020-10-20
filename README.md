@@ -14,3 +14,7 @@
         - 008 Break and Continue statements
         - 009 Switch-case
         - 010 Data member visibility (private and public)
+  
+### Functions 
+        
+        - 011 Basics of Functions
