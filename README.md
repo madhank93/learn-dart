@@ -13,3 +13,4 @@
         - 007 Do-While loop
         - 008 Break and Continue statements
         - 009 Switch-case
+        - 010 Data member visibility (private and public)
