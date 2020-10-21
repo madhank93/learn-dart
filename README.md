@@ -18,3 +18,4 @@
 ### Functions 
         
         - 011 Basics of Functions
+        - 012 Parameters type in Function

@@ -1,0 +1,6 @@
+name: 'Madhan K' 
+version: 0.0.1 
+description: Dart tutorials. 
+
+dependencies: 
+    meta: ^1.2.3  

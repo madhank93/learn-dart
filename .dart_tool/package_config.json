@@ -1,0 +1,19 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "meta",
+      "rootUri": "file:///C:/Users/maddy/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/meta-1.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "1.12"
+    },
+    {
+      "name": "vector_victor",
+      "rootUri": "../",
+      "packageUri": "lib/"
+    }
+  ],
+  "generated": "2020-10-21T17:43:52.416741Z",
+  "generator": "pub",
+  "generatorVersion": "2.10.1"
+}
