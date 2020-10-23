@@ -19,3 +19,11 @@
         
         - 011 Basics of Functions
         - 012 Parameters type in Function
+
+### Built-in functions
+        
+        - 013 String built-in functions
+
+### Object Oriented Programming
+        
+        - 
