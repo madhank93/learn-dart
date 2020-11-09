@@ -25,13 +25,20 @@ void main() {
   // Example 1
   final regexPattern = RegExp(r'(\d+)');
   final content = "This message as two mobile number 12345 12345 and 54321 54321";
-  print(regexPattern.allMatches(content).map((match) => match.group(0)).join('-'));
+  print(regexPattern.allMatches(content).map((match) => match.group(0)).join('-')); // 12345-12345-54321-54321
   // Example 2
   var matchCount = 0;
     regexPattern.allMatches(content).forEach((match) {
         matchCount += 1;
         print('Match ${matchCount}: ' + content.substring(match.start, match.end));
     });
+    /*
+    Output:
+    Match 1: 12345
+    Match 2: 12345
+    Match 3: 54321
+    Match 4: 54321
+    */
 
   // 3. compareTo() - used to compare the stings
   print('a'.compareTo('b')); // -1 indicates first input is less than second
@@ -56,9 +63,16 @@ void main() {
   print('Dart'.indexOf(RegExp(r'[A-Z][a-z]'))); // 0
 
   // 7. lastIndexOf() - Returns the starting position of the last match pattern in the string
-  print("Dart lang is great".lastIndexOf("great"));
-  print("Dart lang is great".lastIndexOf("flutter"));
-  print("Dart lang is great".lastIndexOf("t"));
+  print("Dart lang is great".lastIndexOf("great")); // 13
+  print("Dart lang is great".lastIndexOf("flutter")); // -1
+  print("Dart lang is great".lastIndexOf("t")); // 17
+
+  // 8. padLeft() - Pads the string on the left if it is shorter than width.
+  String animal = "Dog";
+
+  print(animal.padLeft(10));// "       Dog" (As Dog has it as 3 characters and 7 more characters are need to make it 10, Since option is not passed default character (space) is used)
+  print(animal.padLeft(10,"+")); // +++++++Dog
+  print(animal.padLeft(1,".")); // Dog (nothings gets added since the width is lesser than the string)
   
 
 }

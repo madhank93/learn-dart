@@ -23,6 +23,8 @@
 ### Built-in functions
         
         - 013 String built-in functions
+        - 014 Numbers built-in functions
+        - 015 Dates and times built-in functions
 
 ### Object Oriented Programming
         
