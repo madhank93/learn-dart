@@ -70,9 +70,21 @@ void main() {
   // 8. padLeft() - Pads the string on the left if it is shorter than width.
   String animal = "Dog";
 
-  print(animal.padLeft(10));// "       Dog" (As Dog has it as 3 characters and 7 more characters are need to make it 10, Since option is not passed default character (space) is used)
+  print(animal.padLeft(10));// "       Dog" (As Dog has 3 characters and 7 more characters are need to make it 10, Since option is not passed default character (space) is used)
   print(animal.padLeft(10,"+")); // +++++++Dog
   print(animal.padLeft(1,".")); // Dog (nothings gets added since the width is lesser than the string)
   
+  // 9. padRight()
+  String insects = "Fly";
+
+  print(insects.padRight(10));// Fly       (As Fly 3 characters and 7 more characters are need to make it 10, Since option is not passed default character (space) is used)
+  print(insects.padRight(10,"+")); // Fly+++++++
+  print(insects.padRight(1,".")); // Fly (nothings gets added since the width is lesser than the string)
+
+  // 10. replaceAll() - replaces the matching pattern
+
+  print("I hate dart".replaceAll(RegExp("hate"), "love")); // I love dart
+  print("I1 l2o3v4e5 d6a7r8t9".replaceAll(RegExp('(\\d+)'), "")); // I love dart
+  print('resume'.replaceAll('e', 'é')); // 'résumé'
 
 }
