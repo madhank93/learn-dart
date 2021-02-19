@@ -3,7 +3,6 @@
  */
 
 void main() {
-
   // Arithmetic operator
   print(2 + 3);
   print(2 - 3);
@@ -32,22 +31,25 @@ void main() {
   var a1, b2;
   a1 = value;
   print("a1: $a1");
-  // 2. Assign value to b if b is null; otherwise, b stays the same
-  b2 ??= value; // in this line b2 is null 
+
+  // 2. Null aaware operators
+  // Assign value to b if b is null; otherwise, b stays the same
+
+  // Ex 1 - ??=
+  b2 ??= value; // in this line b2 is null
   print("b2: $b2");
   b2 = 15;
   print("b2: $b2");
 
-  // Conditional expression
-  // 1. When you need to assign a value based on a boolean expression, consider using ?:
-  int age = 16;
-  bool allowed_to_drink = age > 18 ? true :false;
-  print("Allowed to drink - $allowed_to_drink");
-
-  // 2. If the boolean expression tests for null, consider using ??.
+  // Ex 2 - ??
   var first = null;
   var last = ' Godwin';
   var full_name = (first ?? 'Mark') + last;
   print(full_name);
 
+  // Conditional expression
+  // 1. When you need to assign a value based on a boolean expression, consider using ?:
+  int age = 16;
+  bool allowed_to_drink = age > 18 ? true : false;
+  print("Allowed to drink - $allowed_to_drink");
 }
