@@ -24,8 +24,25 @@
         
         - 013 String built-in functions
         - 014 Numbers built-in functions
-        - 015 Dates and times built-in functions
+        - 015 Date and time built-in functions
 
 ### Object Oriented Programming
+
+### Collections
+
+### Generics
+
+### Exception handling
+
+### Functional programming
+
+### Asynchronous programming
         
-        - 
+
+
+
+
+### Resources
+
+        - https://dart.dev/guides
+        - https://api.dart.dev/

@@ -32,7 +32,7 @@ void main() {
   a1 = value;
   print("a1: $a1");
 
-  // 2. Null aaware operators
+  // Null aaware operators
   // Assign value to b if b is null; otherwise, b stays the same
 
   // Ex 1 - ??=
@@ -48,7 +48,7 @@ void main() {
   print(full_name);
 
   // Conditional expression
-  // 1. When you need to assign a value based on a boolean expression, consider using ?:
+  // 1. When you need to assign a value based on a boolean expression, consider using ?
   int age = 16;
   bool allowed_to_drink = age > 18 ? true : false;
   print("Allowed to drink - $allowed_to_drink");
